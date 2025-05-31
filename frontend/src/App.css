@@ -1,0 +1,70 @@
+#root {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: left;
+}
+.stat-tree {
+  list-style: none;
+  padding-left: 1rem;
+  border-left: 2px solid #444;
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.stat-tree li {
+  margin: 0.3rem 0;
+  padding-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.stat-icon {
+  font-size: 1.2rem;
+}
+
+.stat-label {
+  font-weight: 500;
+}
+
+.stat-effort {
+  margin-left: auto;
+  color: #aaa;
+}
+
+h2, h3 {
+  color: #f0f0f0;
+}
+
+ul.list-disc {
+  color: #ddd;
+}
+h2, h3 {
+  color: #f0f0f0;
+  margin-top: 1.5rem;
+}
+
+.stat-label {
+  font-weight: 600;
+  color: #e0e0e0;
+}
+
+.stat-effort {
+  color: #bbb;
+  margin-left: 0.5rem;
+}
+h2 {
+  font-size: 1.75rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  color: #f1f1f1;
+  border-bottom: 1px solid #444;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-top: 1.5rem;
+  color: #ddd;
+}

@@ -22,4 +22,14 @@ public class Worklog {
     private WorklogType type;
 
     private int effort;           // hours
+
+    public Long getId() { return id; }
+    public Employee getEngineer() { return engineer; }
+    public void setEngineer(Employee engineer) { this.engineer = engineer; }
+    public YearMonth getMonthDate() { return monthDate; }
+    public void setMonthDate(YearMonth monthDate) { this.monthDate = monthDate; }
+    public WorklogType getType() { return type; }
+    public void setType(WorklogType type) { this.type = type; }
+    public int getEffort() { return effort; }
+    public void setEffort(int effort) { this.effort = effort; }
 }

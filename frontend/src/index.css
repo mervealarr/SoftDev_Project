@@ -1,0 +1,29 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #1a1a1a;
+  color: white;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+#root {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+.app-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+}
+
+.app-content {
+  width: 100%;
+  max-width: 800px;
+}
