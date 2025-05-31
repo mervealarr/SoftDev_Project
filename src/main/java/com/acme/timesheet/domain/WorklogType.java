@@ -10,7 +10,7 @@ public class WorklogType {
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
-    // Development, Analysis, Test…
+
 
     public Long getId() {
         return id;

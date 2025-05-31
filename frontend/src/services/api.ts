@@ -4,7 +4,7 @@ const client = axios.create({
   baseURL: "/api"
 });
 
-// Back-end’e /grades, /employees, /worklog-types, /worklogs endpoint’leri için fonksiyonlar:
+
 export const getGrades       = () => client.get("/grades").then(r => r.data);
 export const getEmployees    = () => client.get("/employees").then(r => r.data);
 export const getWorklogTypes = () => client.get("/worklog-types").then(r => r.data);

@@ -6,7 +6,7 @@ public class DashboardDto {
     private List<StatDto> byEmployee;
     private List<StatDto> byTeamLead;
     private List<StatDto> byDirector;
-    // bu alttaki iki yeni
+
     private List<StatDto> byGrade;
     private List<StatDto> byWorklogType;
 

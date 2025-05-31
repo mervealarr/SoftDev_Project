@@ -53,42 +53,7 @@ public class WorklogService {
         return worklogRepo.save(w);
     }
 
-    /*public DashboardDto getDashboard() {
-        List<StatDto> byEmp = worklogRepo.sumEffortByEmployee();
-        List<StatDto> byLead = worklogRepo.sumEffortByTeamLead();
-        List<StatDto> byDirector = worklogRepo.sumEffortByDirector();
 
-        // çalışanları children olarak ekledim
-        for (StatDto lead : byLead) {
-            List<StatDto> teamMembers = byEmp.stream()
-                    .filter(emp -> {
-                        String[] parts = emp.getLabel().split(" ");
-                        if (parts.length < 2) return false;
-                        return employeeRepo.findByFirstNameAndLastName(parts[0], parts[1])
-                                .map(realEmp -> realEmp.getTeamLead() != null && realEmp.getTeamLead().equals(lead.getLabel()))
-                                .orElse(false);
-
-
-                    })
-                    .toList();
-            lead.setChildren(teamMembers);
-        }
-
-        // team lead’leri children olarak ekledim
-        for (StatDto director : byDirector) {
-            List<StatDto> leads = byLead.stream()
-                    .filter(lead -> employeeRepo.findByFirstName(lead.getLabel())
-                            .map(emp -> emp.getDirector() != null && emp.getDirector().equals(director.getLabel()))
-
-                            //.map(emp -> emp.getDirector().equals(director.getLabel()))
-                            .orElse(false)
-                    ).toList();
-            director.setChildren(leads);
-        }
-
-        return new DashboardDto(byEmp, byLead, byDirector);
-    }
-    */
     public DashboardDto getDashboard() {
         List<StatDto> byEmp = worklogRepo.sumEffortByEmployee();
         List<StatDto> byLead = worklogRepo.sumEffortByTeamLead();
@@ -118,7 +83,7 @@ public class WorklogService {
             director.setChildren(leads);
         }
 
-        // Yeni eklenenler: Grade ve Worklog Type
+
         List<StatDto> byGrade = worklogRepo.sumEffortByGrade();
         List<StatDto> byWorklogType = worklogRepo.sumEffortByWorklogType();
 

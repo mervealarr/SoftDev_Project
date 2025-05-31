@@ -15,13 +15,13 @@ public class Worklog {
     @JoinColumn(name = "employee_id")
     private Employee engineer;
 
-    private YearMonth monthDate;  // e.g. 2025-05
+    private YearMonth monthDate;
 
     @ManyToOne
     @JoinColumn(name = "type_id")
     private WorklogType type;
 
-    private int effort;           // hours
+    private int effort;
 
     public Long getId() { return id; }
     public Employee getEngineer() { return engineer; }

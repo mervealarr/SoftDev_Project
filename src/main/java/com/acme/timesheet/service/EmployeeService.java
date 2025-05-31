@@ -38,7 +38,7 @@ public class EmployeeService {
                         )
                 );
 
-        // Gerçek Grade’i Employee’e set ettik burada
+        // Gerçek Grade’i Employee’e set ettim
         e.setGrade(g);
 
         return repo.save(e);
